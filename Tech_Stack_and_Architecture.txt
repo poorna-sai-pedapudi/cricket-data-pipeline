@@ -1,0 +1,28 @@
+TECH STACK:
+In this project we'll use 
+python, 
+
+then Apache airflow that is a managed google cloud composer.
+
+then, google cloud storage to store our csv files,
+
+then, a data flow for our data pipeline to load data from google cloud storage bucket to bigquery
+
+then, we use google cloud function to trigger the data flow job, we'll use bigquery to store our data
+
+then, looker studio to visualize our data into a dashboard.
+
+ARCHITECTURE:
+
+we'll page cricbuzz API data cricket statistic data using python and cloud composer(airflow) 
+(cricbuzz API is from rapidapi.com)
+
+
+we'll page that data and store it in a csv file, and upload the csv file into google cloud storage bucket.
+
+then, cloud function will fetch the details from uploaded csv file and automatically trigger a cloud function to data flow.
+
+then, data flow job will use the template to load data from GCS bucket csv file to bigquery.
+
+Once the data is loaded in the bigquery we can visualize the data using Looker studio.
+
